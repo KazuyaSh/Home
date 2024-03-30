@@ -1271,7 +1271,17 @@ textarea,
 .theme-dark .panel_bd8c76 {
   background-color: rgba(0,0,0,0);
 }
-
+.container_debb33 {
+    height: 60px!important;
+    font-size: 25px!important;
+    font-weight: 550!important;
+    display: flex!important;
+    align-items: center!important;
+    padding: 0 -105px 1px!important;
+    flex-shrink: 0!important;
+    position: relative!important;
+    justify-content: flex-end!important;
+}
 .container_debb33 > .flex__9487d {
   border-radius: 15px;
   background: rgba(0,0,0,.3);
