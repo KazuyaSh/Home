@@ -556,7 +556,6 @@ textarea,
 }
 
 .typeWindows_e41dab > .wordmark__5b8c9:after {
-  content: "v6.9.0";
   font-family: var(--code-font);
   font-size: 10px;
   color: rgba(255,255,255,.3);
