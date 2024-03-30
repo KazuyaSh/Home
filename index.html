@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index des Vidéos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* Utilisation de la police Arial */
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(1deg, #212135, #22004f); /* Dégradé linéaire */
+            color: #fff;
+            overflow-y: auto; /* Ajout de la barre de défilement uniquement en cas de besoin */
+        }
+/* Style pour la barre de défilement */
+::-webkit-scrollbar {
+    width: 10px;
+    background: #210f43; /* Couleur de fond de la scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #43196540; /* Violet moyen */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7368a3; /* Violet clair */
+    border-radius: 10px;
+}
+        
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #43196540; /* Violet moyen */
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            position: relative; /* Positionnement relatif pour le contenu absolu */
+        }
+        h1 {
+            text-align: center;
+            color: #7368a3; 
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+        .videos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; /* Espacement équilibré entre les éléments */
+        }
+        .video {
+            width: 300px; /* Largeur fixe des vidéos */
+            height: 169px; /* Hauteur fixe des vidéos */
+            margin-bottom: 20px;
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: 8px;
+            transition: filter 0.3s ease; /* Ajout de la transition de flou */
+        }
+        .video img {
+            width: 100%; /* Largeur de l'image à 100% */
+            height: auto; /* Hauteur automatique */
+            border-radius: 8px;
+            object-fit: cover;
+            transition: filter 0.3s ease; /* Ajout de la transition de flou */
+        }
+        .video:hover img {
+            filter: blur(5px); /* Ajout du flou lorsqu'on survole */
+        }
+        .video .info {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: opacity 0.3s ease; /* Ajout de la transition d'opacité */
+            opacity: 0; /* Initialiser à 0 pour le masquer */
+        }
+        .video:hover .info {
+            opacity: 1; /* Afficher l'info lorsqu'on survole */
+        }
+        .video h2 {
+            margin: 0;
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+        .video p {
+            margin: 0;
+            font-size: 14px; /* Taille du texte de la description de la vidéo */
+            color: #ddd;
+        }
+        .home {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        .home img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            cursor: pointer;
+            border: 6px solid #6259ca9c;
+        }
+        .notification {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #f04747;
+    border-radius: 50%;
+    border: 4px solid #f04747;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.home p {
+    color: #6259ca; /* Changer la couleur du texte du paragraphe */
+    font-family: 'Arial', sans-serif; /* Utilisation de la police Arial */
+    font-size: 16px; /* Taille de la police */
+    margin-top: 10px; /* Marge en haut */
+}
+
+        .notification:hover {
+            background-color: #ff7474; /* Rouge plus clair au survol */
+        }
+        .notification span {
+            position: relative;
+            top: -2px;
+        }
+        .image-notification-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-notification-container img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    border: 6px solid #6259ca9c;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="home" id="home">
+            <h1>Bienvenue sur le site d'UsuxlDev !</h1>
+            <div class="image-notification-container" onclick="scrollToVideos()">
+                <div class="notification" id="visitorCount">0</div>
+            <img class="special-image" src="https://avatars.githubusercontent.com/u/162350019?s=400&u=77612eb9f866fecec3aaf9ca3b1e838598f35397&v=4" alt="Image centrale" onclick="scrollToVideos()">
+            <p>Hello welcome for my little website.ツ</p> <!-- Ajout de la description sous l'image du home -->
+        </div>
+    </div>
+    </div>
+
+    <div class="container">
+        <h1>Images & Vidéos & Dev</h1>
+        
+        <div class="videos">
+            <div class="video" onclick="openVideo('https://github.com/zUsuxl/discordtheme')">
+                <img src="https://i.imgur.com/jVJSrnp.gif" alt="Miniature de la vidéo 1">
+                <div class="info">
+                    <h2>Discord Theme</h2>
+                    <p>Theme for discord (use BetterDiscord)</p>
+                </div>
+            </div>
+            
+            <div class="video" onclick="openVideo('comingsoon.html')">
+                <img src="https://i.imgur.com/jVJSrnp.gif" alt="Miniature de la vidéo 2">
+                <div class="info">
+                    <h2>Coming soon...</h2>
+                    <p>Soon...</p>
+                </div>
+            </div>
+
+            <div class="video" onclick="openVideo('comingsoon.html')">
+                <img src="https://i.imgur.com/jVJSrnp.gif" alt="Miniature de la vidéo 3">
+                <div class="info">
+                    <h2>Coming soon...</h2>
+                    <p>Soon...</p>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Ajoutez plus de vidéos de la même manière -->
+
+    </div>
+
+    <script>
+        // Fonction pour simuler le comptage de visiteurs
+        function simulateVisitorCount() {
+            // Générer un nombre aléatoire entre 0 et 1000
+            var visitors = Math.floor(Math.random() * 1000);
+            // Mettre à jour le texte de la notification
+            document.getElementById('visitorsCount').textContent = visitors;
+        }
+
+        // Appeler la fonction pour simuler le comptage des visiteurs toutes les 5 secondes
+        setInterval(simulateVisitorCount, 5000);
+
+        function scrollToVideos() {
+            document.querySelector('.container:last-of-type').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+        function openVideo(videoLink) {
+            window.open(videoLink);
+        }
+
+         // Simuler une augmentation du nombre de visiteurs à chaque chargement de la page
+         let visitorCount = parseInt(localStorage.getItem('visitorCount')) || 0; // Obtenir le nombre de visiteurs depuis le stockage local
+        visitorCount++; // Augmenter le nombre de visiteurs
+        localStorage.setItem('visitorCount', visitorCount); // Mettre à jour le nombre de visiteurs dans le stockage local
+        document.getElementById('visitorCount').innerText = visitorCount; // Afficher le nombre de visiteurs dans la notification
+    </script>
+</body>
+</html>
