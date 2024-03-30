@@ -9503,6 +9503,19 @@ code {
 .theme-dark .emojiRemove__744eb {
   background-color: rgba(0,0,0,.4);
 }
+.contents__322f4 {
+    background-color: #4c3c9a !important;
+    color: #fff !important; /* Couleur du texte */
+    padding: 10px 20px !important; /* Espacement interne */
+    border: none !important; /* Suppression de la bordure */
+    border-radius: 5px !important; /* Bordure arrondie */
+    cursor: pointer !important; /* Curseur pointeur au survol */
+    transition: background-color 0.3s !important; /* Transition en cas de changement de couleur */
+}
+
+.contents__322f4:hover {
+    background-color: #614dbb !important; /* Couleur de fond au survol */
+}
 
 .emojiRow_db53d4:hover .emojiAliasPlaceholder_ecea45 {
   visibility: hidden;
