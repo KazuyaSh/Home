@@ -9733,6 +9733,47 @@ code {
   background-color: var(--main-color);
 }
 
+.nickname_db3773 {
+    word-break: break-word!important;
+    background-clip: border-box,text!important;
+    -webkit-background-clip: border-box,text!important;
+    text-shadow: 0 0 5px #8324d7!important;
+    background-image: url(https://static.cracked.io/images/bg1.gif),linear-gradient(90deg,#18a6f9 0,#c87a56 100%,#fff)!important;
+    -webkit-text-fill-color: transparent!important;
+    color: #FF512F!important;
+    font-weight: 700!important;
+}
+
+.lookFilled__950dd, .lookInverted_a299dc {
+    transition: background-color var(--custom-button-transition-duration)ease,color var(--custom-button-transition-duration)ease!important;
+    font-family: Arial, sans-serif !important;
+    font-size: 14px !important;
+    /* font-size: 17px !important; */
+    nt-weight: bold !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+    outline: none !important;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s !important;
+    background-clip: border-box,text!important;
+    -webkit-background-clip: border-box,text!important;
+    text-shadow: 0 0 5px #8324d7!important;
+    background-image: url(https://static.cracked.io/images/bg1.gif),linear-gradient(90deg,#18a6f9 0,#c87a56 100%,#fff)!important;
+    -webkit-text-fill-color: transparent!important;
+    color: #FF512F!important;
+    font-weight: 700!important;
+}
+
+.userTagUsernameBase__2bd24 {
+    overflow: auto!important;
+    word-break: break-all!important;
+    text-overflow: clip!important;
+    white-space: normal!important;
+    color: var(--header-primary)!important;
+    vertical-align: top!important;
+    display: inline!important;
+    text-transform: capitalize!important;
+}
 .contentRegion__08eba .checkbox__1d469.selected__5e5aa {
   border-color: var(--main-color);
   background-color: rgba(0,0,0,0);
