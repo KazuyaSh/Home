@@ -1163,14 +1163,15 @@ html.theme-light,
 	color: hsl(266.37deg 54.06% 41.78%)!important;
 }
 
+
+.wrapperCommon__2578a {
+    animation: colorChange 5s infinite!important;
+}
+
 @keyframes colorChange {
     0% { color: hsl(94.67deg 100% 50.47%)!important; } /* Couleur de départ */
     100% { color: rgb(152, 67, 152)!important; } /* Couleur de fin */
 }
-.wrapperCommon__2578a {
-    animation: colorChange 5s infinite!important; /* Changez 5s à la durée que vous souhaitez */
-}
-
 .nickname_db3773 {
     word-break: break-word !important;
     background-clip: border-box,text !important;
@@ -1181,3 +1182,8 @@ html.theme-light,
     color: #FF512F !important;
     font-weight: 700 !important;
 }
+
+.userTagUsernameBase__2bd24 {
+    text-transform: capitalize!important;
+}
+
