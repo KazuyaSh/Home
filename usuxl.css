@@ -1181,6 +1181,7 @@ html.theme-light,
     -webkit-text-fill-color: transparent !important;
     color: #FF512F !important;
     font-weight: 700 !important;
+    width: 90px;
 }
 
 .userTagUsernameBase__2bd24 {
