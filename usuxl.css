@@ -1188,7 +1188,11 @@ html.theme-light,
     text-transform: capitalize!important;
 }
 
-.avatarWithText__3fb83.layout__59abc .avatar__7bd22 .linkButtonIcon_cff89e {
+.avatarWithText__3fb83.layout__59abc {
+    display: none !important;
+}
+
+.avatarWithText__3fb83.layout__59abc .content_b5e449 .name_f842e4 {
     display: none !important;
 }
 
