@@ -1262,3 +1262,68 @@ html.theme-light,
 
 	--white-500: var(--text-1);
 }
+
+
+
+.vc-ranb-button {
+    color: var(--interactive-normal) !important;
+    padding: 0 0.5em !important;
+    margin-bottom: 0.5em !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    background-clip: border-box,text !important;
+    -webkit-background-clip: border-box,text !important;
+    text-shadow: 0 0 5px #8324d7 !important;
+    background-image: url(https://static.cracked.io/images/bg1.gif),linear-gradient(90deg,#18a6f9 0,#c87a56 100%,#fff) !important;
+    -webkit-text-fill-color: transparent !important;
+    color: #FF512F !important;
+    font-weight: 700 !important;
+}
+
+.container__43554 {
+
+	color: hsl(266.37deg 54.06% 41.78%)!important;
+}
+
+
+.wrapperCommon__2578a {
+    animation: colorChange 5s infinite!important;
+}
+
+@keyframes colorChange {
+    0% { color: hsl(94.67deg 100% 50.47%)!important; } /* Couleur de départ */
+    100% { color: rgb(152, 67, 152)!important; } /* Couleur de fin */
+}
+.nickname_db3773 {
+    word-break: break-word !important;
+    background-clip: border-box,text !important;
+    -webkit-background-clip: border-box,text !important;
+    text-shadow: 0 0 5px #8324d7 !important;
+    background-image: url(https://static.cracked.io/images/bg1.gif),linear-gradient(90deg,#18a6f9 0,#c87a56 100%,#fff) !important;
+    -webkit-text-fill-color: transparent !important;
+    color: #FF512F !important;
+    font-weight: 700 !important;
+    width: 100px;
+}
+
+.userTagUsernameBase__2bd24 {
+    text-transform: capitalize!important;
+}
+
+
+/* Masquer le bouton Boutique */
+a[data-list-item-id*="shop"] {
+    display: none !important;
+}
+
+/* Masquer le bouton Nitro */
+a[data-list-item-id*="nitro"] {
+    display: none !important;
+}
+/* Conteneur pour aligner les boutons "Amis" et "Demandes de message" */
+.friendsButtonContainer_f0963d {
+    display: flex !important; /* Utiliser flexbox pour aligner horizontalement */
+    flex-direction: row !important; /* Orientation horizontale */
+    align-items: center; /* Centre verticalement les éléments */
+    gap: 10px; /* Espacement entre les icônes */
+}
