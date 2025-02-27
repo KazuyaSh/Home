@@ -1367,3 +1367,24 @@ a[data-list-item-id*="nitro"] {
 code.inline {
     background-color: #5225d04a !important;
 }
+
+.itemContainer__675e5 {
+    display: none;
+}
+
+h2.headerContainer__675e5.privateChannelsHeaderContainer__99e7c.container__13cf1.text__13cf1 {
+    display: none;
+}
+
+.container__8061a::after {
+    content: "";
+    display: inline-block;
+    width: 25px; 
+    height: 25px;
+    background-image: url('https://media3.giphy.com/media/nsYNElgerjDZW45CVw/200w.gif'); 
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 0.1px;
+    margin-bottom: 1px;
+}
