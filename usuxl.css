@@ -148,8 +148,8 @@
 .container__8061a::after {
     content: "";
     display: inline-block;
-    width: 22px; 
-    height: 22px;
+    width: 22px!important; 
+    height: 22px!important;
     background-image: url('https://media3.giphy.com/media/nsYNElgerjDZW45CVw/200w.gif'); 
     background-size: contain;
     background-position: center;
@@ -157,8 +157,20 @@
     margin-right: 0.1px;
     margin-bottom: 1px;
 }
-#app-mount .searchAnswer_bd8186 /* search filter answer */,
-#app-mount .searchFilter_bd8186 /* search filter */ {
+.expandedFolderIconWrapper__48112 {
+    position: relative !important;
+    z-index: 10 !important;
+    background: url('https://i.gifer.com/origin/22/22133af5b0f5dfa0021a84d4c886b42b_w200.gif') center center/cover no-repeat !important;
+    background-color: transparent !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+.expandedFolderIconWrapper__48112 svg {
+    display: none !important;
+}
+#app-mount .searchAnswer_bd8186 ,
+#app-mount .searchFilter_bd8186 {
 	background: var(--bg-1);
 }
 .input_ac6cb0 /* big 'find conversation' search bar */ {
