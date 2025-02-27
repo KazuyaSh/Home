@@ -874,6 +874,7 @@ button.fullRegionButton_f1ceac /* fix vc button again */ {
 	width: 4px;
 	border-radius: 4px;
 	margin-left: 4px;
+	background-color: hsl(255.79deg 69.8% 48.04%)!important;
 }
 
 /* list hover animations */
