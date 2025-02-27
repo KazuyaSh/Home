@@ -1363,3 +1363,7 @@ a[data-list-item-id*="nitro"] {
     align-items: center; /* Centre verticalement les éléments */
     gap: 10px; /* Espacement entre les icônes */
 }
+
+code.inline {
+    background-color: #5225d04a !important;
+}
