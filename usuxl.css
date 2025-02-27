@@ -485,6 +485,12 @@ a[href="https://support.discord.com"] /* hide help */
 .panel__5dec7 /* stream panel */ {
 	padding: 10px;
 }
+.childWrapper__6e9f8:has(> svg:not(.favoriteIcon_dcc7a4)) {
+    background: url('https://img1.picmix.com/output/stamp/normal/5/0/6/8/2468605_005b6.gif') center center/cover no-repeat !important;
+    background-color: transparent !important;
+    border-radius: 50% !important; /* Assure que c'est bien un cercle */
+    object-fit: cover !important; /* Garde l’image bien ajustée */
+}
 
 /* add rounded corners */
 .container__2637a /* channel list */,
